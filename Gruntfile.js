@@ -82,7 +82,14 @@ module.exports = function(grunt) {
 				captureTimeout: 60000 * 2,
 				singleRun: true,
 				frameworks: ['jasmine', 'sinon'],
-				files: ['Tests/Utilities/*.js', 'mootools-*.js'],
+				files: [
+					'Tests/Utilities/*.js', 
+					'mootools-*.js', 
+					{pattern: 'Tests/Specs/assets/*.png', included: false, served: true}
+				],
+				proxies :  {
+					'/assets': 'http://localhost:9876/base/Tests/Specs/assets'
+				},
 				sauceLabs: {
 					username: process.env.SAUCE_USERNAME,
 					accessKey: process.env.SAUCE_ACCESS_KEY,
