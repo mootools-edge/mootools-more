@@ -85,11 +85,9 @@ module.exports = function(grunt) {
 				files: [
 					'Tests/Utilities/*.js', 
 					'mootools-*.js', 
-					{pattern: 'Tests/Specs/assets/*.png', included: false, served: true}
+					{pattern: 'Tests/Specs/assets/*.*', included: false, served: true}
 				],
-				proxies :  {
-					'/assets': 'http://localhost:9876/base/Tests/Specs/assets'
-				},
+
 				sauceLabs: {
 					username: process.env.SAUCE_USERNAME,
 					accessKey: process.env.SAUCE_ACCESS_KEY,
