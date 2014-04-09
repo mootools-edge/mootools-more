@@ -34,9 +34,9 @@ env:
 #   - BROWSER='ie6'             BUILD='nocompat'
     
   global:
-    - secure: JeMoJiA110e1Lz9T2VGILe1e/+XD0bjhKoT351FhdMZLJZD4OwuPrSg3+nVj5Lb4Ih8SAAnAhOiach+Ybnm/Ox1JXuqOH6dagRT5nsg2Gx3Alds1aeO43xKsJMhAg6YI8uWNCesgK5NbbDF77qubxDOElO1J6XGWccfV/jz5ZJ8=
-    - secure: QgH0vS5WM5Pqe5rxYo5QSEKOlezA6UJr6199528Lbii6TWgcEC7hi4M77DDMTJMkw80Us4AlXbEHJvPhjgd0SrnurP39x967yZRdfEntzPshMx8ye7FsyG7u4UOXKmynzhYTVO9Ehki2W8DE67x7HyUJC3Vgqe4XNb+4cMvN1+w=
-    
+    - SAUCE_USERNAME=sergiosbox_core
+    - SAUCE_ACCESS_KEY=e9cd398c-418d-47ae-9285-e5b7a5ed9f10
+
 before_script:
     - npm install grunt-cli -g
     - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
