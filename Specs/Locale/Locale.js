@@ -75,9 +75,10 @@ describe('Locale', function(){
 		Locale.define('de-DE', 'Ping', {
 			ping: 'w00fz, Stop mit Pingen'
 		});
-		Locale.use('de-DE');
 
-		expect(Locale.get('Ping') === Locale.get('Ping')).toBeFalsy();;
+		Locale.use('de-DE');
+		expect(Locale.get('Ping') === Locale.get('Ping')).toBeFalsy();
+		Locale.use('en-US'); // to not export this to other Specs
 	});
 });
 
