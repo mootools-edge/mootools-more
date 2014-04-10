@@ -98,7 +98,7 @@ describe('Assets', function(){
 				onerror: error
 			});
 
-			waits(200);
+			waits(500);
 
 			runs(function(){
 				expect(load).not.toHaveBeenCalled();
@@ -142,7 +142,7 @@ describe('Assets', function(){
 				onerror: error
 			});
 
-			waits(200);
+			waits(500);
 
 			runs(function(){
 				expect(load).not.toHaveBeenCalled();
@@ -171,7 +171,7 @@ describe('Assets', function(){
 				onError: error
 			});
 
-			waits(200);
+			waits(500);
 
 			runs(function(){
 				expect(complete).toHaveBeenCalled();
@@ -197,7 +197,7 @@ describe('Assets', function(){
 				onError: error
 			});
 
-			waits(200);
+			waits(500);
 
 			runs(function(){
 				expect(complete).toHaveBeenCalled();
