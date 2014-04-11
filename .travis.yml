@@ -14,8 +14,8 @@ env:
     - BROWSER='ie7'             BUILD='nocompat'
     
   global:
-    - SAUCE_USERNAME=sergiosbox_core
-    - SAUCE_ACCESS_KEY=e9cd398c-418d-47ae-9285-e5b7a5ed9f10
+    - SAUCE_USERNAME=more-repo
+    - SAUCE_ACCESS_KEY=a8fcf449-5741-41c0-8e3f-74a9896606ab
 
 before_script:
     - npm install grunt-cli -g
