@@ -12,7 +12,7 @@ env:
     - BROWSER='safari7'         BUILD='nocompat'
     - BROWSER='safari6'         BUILD='nocompat'
     - BROWSER='ie7'             BUILD='nocompat'
-    
+
   global:
     - SAUCE_USERNAME=more-repo
     - SAUCE_ACCESS_KEY=a8fcf449-5741-41c0-8e3f-74a9896606ab
